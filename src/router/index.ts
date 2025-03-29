@@ -1,13 +1,12 @@
 import {createRouter, createWebHistory} from 'vue-router'
-import AdminLayout from '@/layouts/AdminLayout.vue'
+import AdminLayout from '@/layouts/Layout.vue'
 
 const routes = [
     {
         path: '/',
         component: AdminLayout,
         children: [
-            {path: '', component: () => import('@/views/Home.vue')},
-            {path: 'users', component: () => import('@/views/Users.vue')},
+            {path: '', component: () => import('@/views/Home.vue')}
         ],
     },
     {path: '/login', component: () => import('@/views/Login.vue')},

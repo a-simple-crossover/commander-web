@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'), // 确保这里是正确的
+      '@': path.resolve(__dirname, 'src'),
     },
   },
 })
